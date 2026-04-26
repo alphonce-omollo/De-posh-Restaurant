@@ -1,145 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De Posh | Luxury Dining Experience</title>
+  <title>De Posh | Luxury Dining in Kisii</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background: #0c0c0c; color: #fff; }
-    header {
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1555992336-03a23c4a1a8f');
-      height: 100vh;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    header h1 { font-size: 4rem; color: gold; }
-    header p { margin: 20px 0; font-size: 1.2rem; }
-    .btn {
-      padding: 12px 25px;
-      background: gold;
-      color: black;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover { background: white; }
-
-    section { padding: 80px 10%; }
-
-    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-    .about img { width: 100%; border-radius: 15px; }
-
-    .menu { text-align: center; }
-    .menu-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 20px; margin-top: 40px; }
-    .card {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 15px;
-      transition: 0.3s;
-    }
-    .card:hover { transform: translateY(-10px); }
-
-    .reviews { background: #111; }
-    .review-card { margin: 20px 0; }
-
-    .cta {
-      background: gold;
-      color: black;
-      text-align: center;
-      padding: 60px 20px;
-      border-radius: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #000;
-      font-size: 0.9rem;
-    }
-
-    @media(max-width: 768px) {
-      .about { grid-template-columns: 1fr; }
-      header h1 { font-size: 2.5rem; }
-    }
-  </style>
 </head>
 <body>
 
-<header>
-  <h1>De Posh</h1>
-  <p>Luxury Dining. Unforgettable Experience.</p>
-  <a href="#menu" class="btn">Explore Menu</a>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">De Posh</div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Luxury Dining Experience in Kisii</h1>
+    <p>Affordable luxury • Balcony vibes • Exceptional service</p>
+    <a href="contact.html" class="btn">Reserve a Table</a>
+  </div>
 </header>
 
-<section class="about">
-  <div>
-    <h2>About De Posh</h2>
-    <p>
-      Located in Kisii, De Posh is your premium destination for fine dining, relaxing balcony views, and unforgettable vibes. Whether you're here for a romantic evening, a celebration, or just to chill with friends — we deliver an experience, not just food.
-    </p>
-    <br>
-    <p>
-      From expertly crafted meals to a luxurious ambiance, every detail is designed to make you feel special.
-    </p>
-  </div>
-  <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="restaurant">
-</section>
-
-<section id="menu" class="menu">
-  <h2>Our Signature Menu</h2>
-  <div class="menu-items">
-    <div class="card">
-      <h3>Grilled Beef Platter</h3>
-      <p>Juicy, tender beef served with sides</p>
-    </div>
-    <div class="card">
-      <h3>Chicken Peri-Peri</h3>
-      <p>Spicy, flavorful grilled chicken</p>
-    </div>
-    <div class="card">
-      <h3>Classic Cocktails</h3>
-      <p>Refreshing drinks crafted to perfection</p>
-    </div>
-    <div class="card">
-      <h3>Chef's Special</h3>
-      <p>A unique experience every visit</p>
+<!-- ABOUT PREVIEW -->
+<section class="section about-preview">
+  <div class="container">
+    <div class="grid-2">
+      <div>
+        <h2>Welcome to De Posh</h2>
+        <p>
+          De Posh is Kisii’s go-to destination for premium dining and unforgettable experiences.
+          Whether you're enjoying our signature meals or relaxing on our scenic balcony,
+          every moment is crafted to impress.
+        </p>
+        <a href="about.html" class="btn-outline">Learn More</a>
+      </div>
+      <div>
+        <img src="images/restaurant.jpg" alt="Restaurant">
+      </div>
     </div>
   </div>
 </section>
 
-<section class="reviews">
-  <h2>What People Are Saying</h2>
+<!-- SERVICES PREVIEW -->
+<section class="section dark">
+  <div class="container">
+    <h2 class="center">Our Experience</h2>
+    <div class="grid-3">
 
-  <div class="review-card">
-    <p>"Very nice place to chill out especially on the balcony ❤️"</p>
+      <div class="card">
+        <h3>Fine Dining</h3>
+        <p>Enjoy expertly prepared meals in a luxurious setting.</p>
+      </div>
+
+      <div class="card">
+        <h3>Balcony Lounge</h3>
+        <p>Relax and unwind with stunning views and great vibes.</p>
+      </div>
+
+      <div class="card">
+        <h3>Events</h3>
+        <p>Perfect space for birthdays, dates, and celebrations.</p>
+      </div>
+
+    </div>
   </div>
-
-  <div class="review-card">
-    <p>"Food and atmosphere are nice but service needs improvement."</p>
-  </div>
-
-  <div class="review-card">
-    <p>"Management should improve staff attitude for a better experience."</p>
-  </div>
-
 </section>
 
+<!-- FEATURED MENU -->
+<section class="section">
+  <div class="container">
+    <h2 class="center">Popular Dishes</h2>
+    <div class="grid-3">
+
+      <div class="card">
+        <img src="images/food1.jpg">
+        <h3>Grilled Beef</h3>
+        <p>KES 800</p>
+      </div>
+
+      <div class="card">
+        <img src="images/food2.jpg">
+        <h3>Chicken Peri Peri</h3>
+        <p>KES 700</p>
+      </div>
+
+      <div class="card">
+        <img src="images/drink.jpg">
+        <h3>Signature Cocktails</h3>
+        <p>KES 600</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section dark">
+  <div class="container">
+    <h2 class="center">What Our Guests Say</h2>
+
+    <div class="testimonial">
+      <p>"Amazing place to chill, especially the balcony!"</p>
+    </div>
+
+    <div class="testimonial">
+      <p>"Great food and atmosphere — now with much better service."</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
 <section class="cta">
-  <h2>Ready for a Premium Experience?</h2>
-  <p>Reserve your table today and enjoy the best vibes in Kisii.</p>
-  <a href="#" class="btn">Book Now</a>
+  <h2>Ready for an Unforgettable Experience?</h2>
+  <p>Book your table now and enjoy Kisii’s finest dining spot.</p>
+  <a href="https://wa.me/254795583817" class="btn">Book via WhatsApp</a>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 De Posh Restaurant | Kisii</p>
+
+  <div class="footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2>De Posh</h2>
+      <p>
+        Kisii’s premium dining destination offering luxury meals,
+        balcony vibes, and unforgettable experiences.
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>📍 Kisii Town</p>
+      <p>📞 +254 7955 838 17</p>
+      <p>💬 WhatsApp Booking</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 De Posh Restaurant | Designed with Luxury Experience in Mind
+  </div>
+  <div class="social-icons">
+
+  <a href="https://wa.me/254795583817" target="_blank" class="wa">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <a href="#" target="_blank" class="ig">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="#" target="_blank" class="fb">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+
+  <a href="#" target="_blank" class="tt">
+    <i class="fa-brands fa-tiktok"></i>
+  </a>
+
+  <a href="#" target="_blank" class="x">
+    <i class="fa-brands fa-x-twitter"></i>
+  </a>
+
+</div>
+
 </footer>
 
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/2547XXXXXXXX" class="whatsapp">💬</a>
+
+<div class="mobile-cta">
+  <a href="https://wa.me/2547XXXXXXXX">📞 Call</a>
+  <a href="contact.html">🍽 Reserve</a>
+</div>
 </body>
 </html>
